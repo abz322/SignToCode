@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{822F03E9-1C33-4EA7-8CD2-03F3E897E5E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCT.NUI.SignToCode</RootNamespace>
+    <AssemblyName>Sign To Code</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Deliveribles\9. Final Product\Product\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>33</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SignToCode.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4D834FD9388A778F31D529B96F396BCD7CFCB926</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CCT.NUI.SignToCode_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\KinectSDK\Microsoft.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNI.net, Version=1.5.2.23, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\OpenNI\OpenNI.net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CodeMode.xaml.cs">
+      <DependentUpon>CodeMode.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CodeMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CssLibrary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CCT.NUI.SignToCode_TemporaryKey.pfx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCT.NUI.Core\CCT.NUI.Core.csproj">
+      <Project>{AA2D3699-3FC9-43D6-AA24-CD930E487BC7}</Project>
+      <Name>CCT.NUI.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCT.NUI.HandTracking\CCT.NUI.HandTracking.csproj">
+      <Project>{E8310B15-6B84-40A5-856D-B0AE0EEE3771}</Project>
+      <Name>CCT.NUI.HandTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCT.NUI.KinectSDK\CCT.NUI.KinectSDK.csproj">
+      <Project>{CDB12665-4E9E-46CA-AD74-63E943C17F62}</Project>
+      <Name>CCT.NUI.KinectSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCT.NUI.Visual\CCT.NUI.Visual.csproj">
+      <Project>{5FCD7892-BB28-4BCC-9B57-0EAA463356ED}</Project>
+      <Name>CCT.NUI.Visual</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SignToCode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Save_File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Load_File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Code_Mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No_Type\beautifier.png" />
+    <Resource Include="Images\No_Type\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Mouse_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Mouse_Click_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No_Type\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No_Type\code_mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Numbers\0.png" />
+    <Resource Include="Images\Numbers\1.png" />
+    <Resource Include="Images\Numbers\2.png" />
+    <Resource Include="Images\Numbers\3.png" />
+    <Resource Include="Images\Numbers\4.png" />
+    <Resource Include="Images\Numbers\5.png" />
+    <Resource Include="Images\Numbers\6.png" />
+    <Resource Include="Images\Numbers\7.png" />
+    <Resource Include="Images\Numbers\8.png" />
+    <Resource Include="Images\Numbers\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Alphabet\a.png" />
+    <Resource Include="Images\Alphabet\b.png" />
+    <Resource Include="Images\Alphabet\c.png" />
+    <Resource Include="Images\Alphabet\d.png" />
+    <Resource Include="Images\Alphabet\e.png" />
+    <Resource Include="Images\Alphabet\f.png" />
+    <Resource Include="Images\Alphabet\g.png" />
+    <Resource Include="Images\Alphabet\h.png" />
+    <Resource Include="Images\Alphabet\i.png" />
+    <Resource Include="Images\Alphabet\j.png" />
+    <Resource Include="Images\Alphabet\k.png" />
+    <Resource Include="Images\Alphabet\l.png" />
+    <Resource Include="Images\Alphabet\m.png" />
+    <Resource Include="Images\Alphabet\n.png" />
+    <Resource Include="Images\Alphabet\o.png" />
+    <Resource Include="Images\Alphabet\p.png" />
+    <Resource Include="Images\Alphabet\q.png" />
+    <Resource Include="Images\Alphabet\r.png" />
+    <Resource Include="Images\Alphabet\s.png" />
+    <Resource Include="Images\Alphabet\t.png" />
+    <Resource Include="Images\Alphabet\u.png" />
+    <Resource Include="Images\Alphabet\v.png" />
+    <Resource Include="Images\Alphabet\w.png" />
+    <Resource Include="Images\Alphabet\x.png" />
+    <Resource Include="Images\Alphabet\y.png" />
+    <Resource Include="Images\Alphabet\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Value\absolute.png" />
+    <Resource Include="Images\Value\fixed.png" />
+    <Resource Include="Images\Value\hidden.png" />
+    <Resource Include="Images\Value\italic.png" />
+    <Resource Include="Images\Value\left.png" />
+    <Resource Include="Images\Value\normal.png" />
+    <Resource Include="Images\Value\relative.png" />
+    <Resource Include="Images\Value\right.png" />
+    <Resource Include="Images\Value\scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Property\color.png" />
+    <Resource Include="Images\Property\font-style.png" />
+    <Resource Include="Images\Property\height.png" />
+    <Resource Include="Images\Property\overflow.png" />
+    <Resource Include="Images\Property\position.png" />
+    <Resource Include="Images\Property\text-align.png" />
+    <Resource Include="Images\Property\visibility.png" />
+    <Resource Include="Images\Property\width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Selector\..png" />
+    <Resource Include="Images\Selector\all.png" />
+    <Resource Include="Images\Selector\body.png" />
+    <Resource Include="Images\Selector\div.png" />
+    <Resource Include="Images\Selector\head.png" />
+    <Resource Include="Images\Selector\html.png" />
+    <Resource Include="Images\Selector\iframe.png" />
+    <Resource Include="Images\Selector\li.png" />
+    <Resource Include="Images\Selector\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\No_Type\newline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cssLibrary.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Property\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="cssLibrary.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Target Name="BeforeBuild">
+    <!--
+      <ItemGroup>
+        <Content Include="cssLibrary.xml" />
+      </ItemGroup>
+    -->
+  </Target>
+  <!--bin\** <Target Name="BeforePublish">
+      <Touch Files="@(IntermediateAssembly)" />
+      <CreateItem Include="@(AdditionalPublishFile)" AdditionalMetadata="TargetPath=%(FileName)%(Extension);IsDataFile=false">
+        <Output TaskParameter="Include" ItemName="_DeploymentManifestFiles" />
+      </CreateItem>
+    </Target>-->
+  <!--<Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

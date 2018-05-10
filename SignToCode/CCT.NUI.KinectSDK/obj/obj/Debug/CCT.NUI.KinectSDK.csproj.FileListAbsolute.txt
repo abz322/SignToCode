@@ -1,0 +1,10 @@
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\CCT.NUI.KinectSDK.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\CCT.NUI.KinectSDK.pdb
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\CCT.NUI.Core.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\OpenNI.Net.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\XnVNITE.net.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\bin\Debug\CCT.NUI.Core.pdb
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\obj\Debug\CCT.NUI.KinectSDK.csprojResolveAssemblyReference.cache
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\obj\Debug\CCT.NUI.KinectSDK.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.KinectSDK\obj\Debug\CCT.NUI.KinectSDK.pdb

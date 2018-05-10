@@ -1,0 +1,12 @@
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.HandTracking.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.HandTracking.pdb
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.Core.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.KinectSDK.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\OpenNI.Net.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\XnVNITE.net.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.Core.pdb
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\bin\Debug\CCT.NUI.KinectSDK.pdb
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\obj\Debug\CCT.NUI.HandTracking.csprojResolveAssemblyReference.cache
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\obj\Debug\CCT.NUI.HandTracking.dll
+C:\Users\Abdassami\Dropbox\Uni Folder\Final Year\1. Project\Kinect Examples\candescentnui!!!\CCT.NUI.HandTracking\obj\Debug\CCT.NUI.HandTracking.pdb

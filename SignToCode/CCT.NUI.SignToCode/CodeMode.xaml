@@ -1,0 +1,51 @@
+﻿<Window x:Class="CCT.NUI.SignToCode.CodeMode"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:CCT.NUI.Visual;assembly=CCT.NUI.Visual"
+	Title="Sign To Code: Code Mode" Height="1080" Width="1920"  Icon="SignToCode.ico" IsManipulationEnabled="true" Closing="Window_Closing" Background="White" WindowState="Maximized">
+
+    <Grid Margin="10,0,2,-3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="158*"/>
+            <RowDefinition Height="131*"/>
+        </Grid.RowDefinitions>
+        <Border Width="604" Height="404" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="0,0,5,5" Grid.RowSpan="2" Margin="-12,0,0,0">
+            <uc:WpfVideoControl x:Name="videoControl" Margin="0,0,0,0"/>
+        </Border>
+
+        <Border Width="604" Height="648" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="0,0,5,0" Margin="-12,404,0,0" Grid.RowSpan="2">
+            <StackPanel Width="604" Height="648" HorizontalAlignment="Center" Grid.Row="3">
+                <Image x:Name="gestureImage" Height="250" Margin="0,0,0,30"></Image>
+                <Image x:Name="arrowImage" Height="200" Source="Images/Arrow_Image.png" />
+                <Label x:Name="gestureTextInfo"  FontFamily="Myriad Pro" FontWeight="SemiBold" HorizontalAlignment="Center" FontSize="40" Height="115" Margin="0,50,0,0" BorderThickness="0" />
+            </StackPanel>
+        </Border>
+        <Border Width="866" Height="1052" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="0" Margin="592,0,0,0" Grid.RowSpan="2">
+            <TextBox x:Name="cssTxtBlock" TextWrapping="Wrap" Text="" FontSize="22" Focusable="True" Margin="0,10,0,48" BorderThickness="0" FontWeight="Bold" PreviewKeyDown="KeyListener" />
+        </Border>
+        <Border Width="442" Height="592" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="5,0,0,5" Margin="1458,0,0,0" Grid.RowSpan="2">
+            <StackPanel HorizontalAlignment="Center" Width="450" Margin="-5,205" Grid.Row="1">
+                <Button Margin="0,0,0,50" VerticalAlignment="Center" HorizontalAlignment="Center" Click="buttonLoad_Click" Width="301" Height="62" Background="#FF4E1677" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">
+                    <StackPanel Width="302" Height="62" >
+                        <Label FontSize="40" Foreground="White" FontFamily="Myriad Pro" FontWeight="SemiBold" Margin="5,5,93,0" Content="Load File" HorizontalAlignment="Left"/>
+                        <Image Height="62" Source="Images/Mouse_Click.png" Width="80" HorizontalAlignment="Right" Margin="0,-66,5,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="74,0,74,50"  Click="buttonSave_Click"  Width="302" Height="62" Background="#FF4E1677"  HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" >
+                    <StackPanel Width="302" Height="62" >
+                        <Label FontSize="40" Foreground="White" FontFamily="Myriad Pro" FontWeight="SemiBold" Margin="5,5,93,0" Content="Save File" HorizontalAlignment="Left"/>
+                        <Image Height="62" Source="Images/Mouse_Click.png" Width="80" HorizontalAlignment="Right" Margin="0,-66,5,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+        <Border Width="442" Height="460" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="5,0,0,0" Margin="1458,17,0,0" Grid.Row="1">
+            <Button Margin="0,0,0,50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="buttonExit_Click" Width="301" Height="62" Background="#FF4E1677" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">
+                <StackPanel Width="302" Height="62" >
+                    <Label FontSize="40" Foreground="White" FontFamily="Myriad Pro" FontWeight="SemiBold" Margin="5,5,93,0" Content="Exit" HorizontalAlignment="Left"/>
+                    <Image Height="62" Source="Images/Exit.png" Width="80" HorizontalAlignment="Right" Margin="0,-60,5,0"/>
+                </StackPanel>
+            </Button>
+        </Border>
+    </Grid>
+</Window>

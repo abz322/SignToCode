@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<TestDepthFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>cb39bf62-8d67-4e71-9758-bc2bbdc1bf3c</Id>
+  <Hands />
+  <Frame>
+    <Binary>AQACAAMA</Binary>
+    <Size>
+      <Width>640</Width>
+      <Height>480</Height>
+    </Size>
+  </Frame>
+</TestDepthFrame>

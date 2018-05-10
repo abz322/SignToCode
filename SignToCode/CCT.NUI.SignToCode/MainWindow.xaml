@@ -1,0 +1,30 @@
+﻿<Window x:Class="CCT.NUI.SignToCode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:CCT.NUI.Visual;assembly=CCT.NUI.Visual"
+        Title="Sign To Code: Main Menu" Height="1080" Width="1920" Icon="SignToCode.ico" IsManipulationEnabled="true" Closing="Window_Closing" WindowState="Maximized">
+    <Grid Margin="10,0,2,-3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="158*"/>
+            <RowDefinition Height="131*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Width="416" Margin="0,0,0,10" Grid.Row="1">
+            <Button x:Name="codeModeBtn" Margin="58,5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="buttonCodeMode_Click" Width="300" Height="62" Background="#FF4E1677" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">
+                <StackPanel Width="302" Height="62" >
+                    <Label FontSize="40" Foreground="White" FontFamily="Myriad Pro" FontWeight="SemiBold" Margin="5,5,93,0" Content="Code Mode" HorizontalAlignment="Left"/>
+                    <Image Height="62" Source="Images/Code_Mode.png" Width="80" HorizontalAlignment="Right" Margin="0,-60,5,0"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="exitBtn" Margin="58,27,58,5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="buttonExit_Click" Width="301" Height="62" Background="#FF4E1677" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">
+                <StackPanel Width="302" Height="62" >
+                    <Label FontSize="40" Foreground="White" FontFamily="Myriad Pro" FontWeight="SemiBold" Margin="5,5,93,0" Content="Exit" HorizontalAlignment="Left"/>
+                    <Image Height="62" Source="Images/Exit.png" Width="80" HorizontalAlignment="Right" Margin="0,-60,5,0"/>
+                </StackPanel>
+            </Button>
+            <Label x:Name="Sign_To_Code" Content="Sign To Code" Foreground="#FF4E1677" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Myriad Pro" FontSize="72" FontWeight="Bold" Margin="0,195,0,0"/>
+        </StackPanel>
+        <Border Width="604" Height="404" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" BorderBrush="#FF4E1677" BorderThickness="5">
+            <uc:WpfVideoControl x:Name="videoControl" Margin="0,0,0,0"/>
+        </Border>
+    </Grid>
+</Window>
